@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E247C66224A447B2008CDBBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247C66124A447B2008CDBBA /* AppDelegate.swift */; };
-		E247C66424A447B2008CDBBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247C66324A447B2008CDBBA /* SceneDelegate.swift */; };
-		E247C66624A447B2008CDBBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247C66524A447B2008CDBBA /* ViewController.swift */; };
+		E247C66624A447B2008CDBBA /* viewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247C66524A447B2008CDBBA /* viewController.swift */; };
 		E247C66924A447B2008CDBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E247C66724A447B2008CDBBA /* Main.storyboard */; };
 		E247C66B24A44909008CDBBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E247C66A24A44909008CDBBA /* Assets.xcassets */; };
 		E247C66E24A44909008CDBBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E247C66C24A44909008CDBBA /* LaunchScreen.storyboard */; };
+		E247C67824A486D6008CDBBA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247C67624A486D5008CDBBA /* CollectionViewCell.swift */; };
+		E247C67924A486D6008CDBBA /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E247C67724A486D5008CDBBA /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E247C65E24A447B1008CDBBA /* photoGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E247C66124A447B2008CDBBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E247C66324A447B2008CDBBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E247C66524A447B2008CDBBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E247C66524A447B2008CDBBA /* viewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewController.swift; sourceTree = "<group>"; };
 		E247C66824A447B2008CDBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E247C66A24A44909008CDBBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E247C66D24A44909008CDBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E247C66F24A44909008CDBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E247C67624A486D5008CDBBA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E247C67724A486D5008CDBBA /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		E247C66024A447B2008CDBBA /* photoGallery */ = {
 			isa = PBXGroup;
 			children = (
+				E247C67524A4866C008CDBBA /* imageCell */,
 				E247C66124A447B2008CDBBA /* AppDelegate.swift */,
-				E247C66324A447B2008CDBBA /* SceneDelegate.swift */,
-				E247C66524A447B2008CDBBA /* ViewController.swift */,
+				E247C66524A447B2008CDBBA /* viewController.swift */,
 				E247C66724A447B2008CDBBA /* Main.storyboard */,
 				E247C66A24A44909008CDBBA /* Assets.xcassets */,
 				E247C66C24A44909008CDBBA /* LaunchScreen.storyboard */,
 				E247C66F24A44909008CDBBA /* Info.plist */,
 			);
 			path = photoGallery;
+			sourceTree = "<group>";
+		};
+		E247C67524A4866C008CDBBA /* imageCell */ = {
+			isa = PBXGroup;
+			children = (
+				E247C67624A486D5008CDBBA /* CollectionViewCell.swift */,
+				E247C67724A486D5008CDBBA /* CollectionViewCell.xib */,
+			);
+			path = imageCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +138,7 @@
 			files = (
 				E247C66E24A44909008CDBBA /* LaunchScreen.storyboard in Resources */,
 				E247C66B24A44909008CDBBA /* Assets.xcassets in Resources */,
+				E247C67924A486D6008CDBBA /* CollectionViewCell.xib in Resources */,
 				E247C66924A447B2008CDBBA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E247C66624A447B2008CDBBA /* ViewController.swift in Sources */,
+				E247C66624A447B2008CDBBA /* viewController.swift in Sources */,
 				E247C66224A447B2008CDBBA /* AppDelegate.swift in Sources */,
-				E247C66424A447B2008CDBBA /* SceneDelegate.swift in Sources */,
+				E247C67824A486D6008CDBBA /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZCK4R7FGT9;
 				INFOPLIST_FILE = photoGallery/Info.plist;
@@ -291,8 +304,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AKDeveloper.photoGallery;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akdeveloper.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZCK4R7FGT9;
 				INFOPLIST_FILE = photoGallery/Info.plist;
@@ -309,8 +324,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AKDeveloper.photoGallery;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akdeveloper.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
